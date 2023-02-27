@@ -1,9 +1,12 @@
-import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { useGetDateQuery } from './features/date/dateApi';
 
 function App() {
+  
+  useGetDateQuery();
+  
   return (
     <div className="App">
       <header className="App-header">
